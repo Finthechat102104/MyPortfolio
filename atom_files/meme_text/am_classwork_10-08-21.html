@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Meme Text</title>
+  <link rel="stylesheet" href="memetext.css">
+</head>
+<body>
+
+<div>
+  <p id="paragraph" class="absolute">Are you trying to put code outside the html tags?</p>
+  <img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://i1.sndcdn.com/artworks-Xo9ZmePNP5EP6DdI-BKuw0w-t500x500.jpg" alt="you cant">
+</div>
+
+    <label for="ttext">Top Text:</label>
+    <input type="text" id="ttext" name="ttext">
+    <input type="submit" value="Submit" onclick="changeText()" value="changeText">
+
+
+  <script>
+  function changeText(){
+    let paragraphElement=document.getElementById("paragraph");
+    paragraphElement.innerHTML=ttext.value;
+  }
+  </script>
+
+</body>
+</html>

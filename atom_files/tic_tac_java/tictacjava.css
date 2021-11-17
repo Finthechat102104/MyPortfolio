@@ -1,0 +1,25 @@
+.box {
+
+  box-sizing: border-box;
+  width: 33%;
+  height: 33vw;
+  border: .1em solid black;
+  padding: 15.5%;
+  margin: 0;
+  text-align: center;
+  background-color: lightgray;
+  float: left;
+  display: inline-block;
+}
+
+#grid  {
+  position: relative;
+  width: 100%;
+  max-width: 100vh;
+  height: 100vw;
+}
+
+p {
+  margin: auto;
+  line-height: 100%;
+}
