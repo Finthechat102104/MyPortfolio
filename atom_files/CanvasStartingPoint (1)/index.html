@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Example</title>
+  <script src="canvas.js"></script>
+  <link rel="stylesheet" type="text/css" href="canvas.css"/>
+</head>
+<body>
+
+<input id="color" type="text" value="black"/> <br/>
+
+<!-- fill in your image src here -->
+<img id="cat" width="canvas" height="0" src="2-color-eyes.png" alt="2 colored eyes">
+
+<p>Canvas:</p>
+
+<canvas id="myCanvas" width="400" height="400"
+        style="border:1px solid #d3d3d3;"
+        onmouseup="onMouseUp(event);"
+        onmousedown="onMouseDown(event);"
+        onmousemove="onMouseMove(event);">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+<p id="coords">x:  y:</p>
+</body>
+</html>
