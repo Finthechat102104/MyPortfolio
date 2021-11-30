@@ -1,3 +1,5 @@
+package RisingSun;
+
 import objectdraw.*;
 import java.awt.*;
 
@@ -10,18 +12,17 @@ import java.awt.*;
 public class RisingSun extends WindowController
 {
     
-    private FilledOval sun;
-    
+    private FilledOval sun;   
     private Text instructions;
+    private Location initialLocation = new Location(150,350);
     
     // instance variables - replace the example below with your own
-   public void begin() {
-      sun = new FilledOval(150,350,100,100,canvas);
-      
-      instructions = new Text("Please click on the mouse repeatedly", 20, 20, canvas);
-      
-      
-      
+   public void begin() 
+   {
+       sun = new FilledOval(initialLocation,100,100,canvas);
+       Color myColor = new Color(0,200,255);
+       sun.setColor(myColor);
+       instructions = new Text("Please click on the mouse repeatedly", 20, 20, canvas);
    }
    
    public void onMouseClick(Location point)
@@ -31,9 +32,8 @@ public class RisingSun extends WindowController
    }
 
    public void onMouseExit(Location point)
-{
-    sun.moveTo(150, 350);
-    instructions.show();
-    
-}
+   {
+       sun.moveTo(initialLocation);
+       instructions.show();
+   }
 }
