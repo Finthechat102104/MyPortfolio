@@ -14,6 +14,7 @@ console.log("The result is %f",result);
 }
 
 
+
 //Example 2: passively asking user to convert Euros
 //Execute this function when #convert button is clicked
 
