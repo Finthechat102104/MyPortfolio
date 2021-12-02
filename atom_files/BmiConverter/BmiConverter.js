@@ -34,4 +34,5 @@ let result = (weight*703)/(height*height);
 let resultElement = document.getElementById("result");
 resultElement.innerHTML = result;
 
+
 }
