@@ -34,4 +34,5 @@ let result = dollars*rate;
 let resultElement = document.getElementById("result");
 resultElement.innerHTML = result;
 
+
 }
