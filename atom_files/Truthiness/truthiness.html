@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Equality Reference Table</title>
+	<link rel="stylesheet" href="truthiness.css">
+	<script src="truthiness.js"> </script>
+</head>
+<body onload="myFirstMethod()">
+
+  <table>
+  <caption> Equality </caption>
+  <!-- first row -->
+  <tr> <th> Expression  </th>  <th> Value</th>  <th>Why?                                          </th> </tr>
+  <tr> <td>  2 &lt; 12  </td>  <td> true </td>  <td> 2 less than 12                               </td> </tr>
+  <tr> <td> 2 &lt; "12" </td>  <td> true </td>  <td> Strings are treated as numbers when compared to numbers</td> </tr>
+  <tr> <td>2 &lt; "John"</td>  <td>false </td>  <td> Strings aren't the same as numbers           </td> </tr>
+  <tr> <td>2 &gt; "John"</td>  <td>false </td>  <td> Strings aren't the same as numbers           </td> </tr>
+  <tr> <td>2 == "John"  </td>  <td>false </td>  <td> Strings aren't the same as numbers           </td> </tr>
+  <tr> <td>"2" &lt; "12"</td>  <td>false </td>  <td> Strings are sorted alphabetically            </td> </tr>
+  <tr> <td>"2" &gt; "12"</td>  <td> true </td>  <td> Strings are sorted alphabetically            </td> </tr>
+  <tr> <td> "2" == "12" </td>  <td>false </td>  <td> Strings are sorted alphabetically            </td> </tr>
+
+  </table>
+  <!-- &ntilde; will give you the n in the spanish banos
+
+
+</body>
+</html>
+2 > "John"	false
+2 == "John"	false
+"2" < "12"	false
+"2" > "12"	true
+"2" == "12"	false
